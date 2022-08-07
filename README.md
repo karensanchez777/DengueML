@@ -1,2 +1,19 @@
-# DengueML
-Se prueban algoritmos de aprendizaje supervisado y no supervisado en un conjunto de datos socioeconómicos y físicos del estado de Jalisco del año 2010 para encontrar algún patrón en el nivel de casos de dengue y para predecir el número de casos de dengue de los municipios de Jalisco. 
+# Análisis de bases de datos para crear un mapa de riesgo epidemiológico del Dengue
+Nuestro objetivo es crear un mapa de riesgo epidemiológico del dengue en el estado de Jalisco, México, con datos que corresponden al año 2010, utilizando (1) algoritmos de aprendizaje no supervisado que nos ayuden a vislumbrar si es que hay un patrón interesante en las características físicas y socioeconómicas del estado y (2) algoritmos de aprendizaje supervisado que puedan predecir el nivel de dengue que hay en cada municipio en base a las características anteriores. 
+
+## ¿ Qué es el Dengue?
+El dengue es una enfermedad causada por cualquiera de los cuatro virus del dengue, DENV-1, DENV-2, DENV-3 y DENV-4, llamados serotipos, que son transmitidos a los humanos por mosquitos hembra, principalmente de la especie Aedes aegypti. El dengue tiene un comportamiento estacionario; el mayor número de casos corresponde a los meses más cálidos y lluviosos.
+
+### Transmisión 
+El virus del dengue no se propaga de humano a humano, sino que los mosquitos son el vehículo necesario para transportarlo, por lo que, el ciclo de transmisión del dengue es humano-mosquito-humano.  Inicia cuando un mosquito pica a una persona con una gran cantidad de virus en su sangre. Una vez que el virus entra en el sistema del mosquito, le toma 8 a 10 días viajar a sus glándulas salivales, con lo cual, el mosquito está en condiciones de transmitir el virus por el resto de su vida. Hay un alto nivel de virus en el humano después de 4 a 7 días de haber sido picado por un mosquito infectado; un mosquito sano pica a esta persona y el proceso de transmisión del dengue se repite. También puede ocurrir una transmisión vertical del dengue, que es cuando una hembra infectada transmite el virus a sus huevos.
+### Ciclo de vida de los mosquitos 
+A lo largo de su ciclo de vida, el mosquito cambia de forma y hábitat. Las hembras depositan sus huevos sobre la superficie de agua o en un contenedor expuesto a llenarse con agua, ya que esta es indispensable para que los huevos puedan eclosionar. No importa si los huevos se dejan en un contenedor seco, pues estos pueden sobrevivir hasta un año en este estado y eclosionar cuando este se llene de agua, por ejemplo, durante la temporada de lluvias.  Las larvas de mosquito salen de los huevos cuando estos quedan sumergidos en el agua. Estas son acuáticas, es decir, viven en el agua y se alimentan de los microorganismos que encuentran ahí. Pasan a través de una serie de etapas larvales de desarrollo hasta transformarse en una pupa. Las pupas también son acuáticas y no se alimentan. Este estadio dura, en condiciones óptimas, dos a tres días, y aquí se inicia la metamorfosis hacia la etapa adulta.  El mosquito completamente desarrollado, rompe la piel de la pupa y emerge hacia el hábitat terrestre. Es capaz de volar, deja de ser acuático y comienza a reproducirse. Es un mosquito oscuro con franjas blancas en las patas y un diseño en forma de lira en el tórax. 
+
+## El dengue en Jalisco, México
+El estado de Jalisco, México cuenta con datos del número de casos de dengue a nivel municipal capturados por el Monitoreo de Indicadores del Desarrollo de Jalisco (MIDE). El nivel de dengue (bajo, moderado, alto) es nuestra variable objetivo.
+
+Este proyecto se divide en cuatro partes principales:
+* PARTE I: Correlación entre el número de casos de dengue y los parámetros socioeconómicos
+* PARTE II: Utilizamos un conjunto de datos que solo contempla las características socioeconómicas del estado de Jalisco con el cual empleamos el algoritmo K-Means para verificar si hay patrones interesantes en estos datos y algoritmos de aprendizaje supervisado para predecir el nivel de dengue de cada municipio. 
+* PARTE III:  Mostramos el proceso que llevamos a cabo para rellenar los datos climatológicos faltantes de las estaciones metereológicas.
+* PARTE IV: Realizamos lo mismo que en la primera parte, pero esta vez añadimos al conjunto de datos inicial las variables climatológicas. 
